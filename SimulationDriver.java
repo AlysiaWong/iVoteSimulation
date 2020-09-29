@@ -1,6 +1,6 @@
 // Alysia Wong
 // CS 3560 Assignment 1
-// SimulationDrive.java - Simulates a random number of students voting on various question types. This includes multiple choice questions or single choice questions.
+// SimulationDriver.java - Simulates a random number of students voting on various question types. This includes multiple choice questions or single choice questions.
 
 package iVoteSimulation;
 
@@ -12,7 +12,7 @@ import iVoteSimulation.SingleChoiceQuestion;
 import iVoteSimulation.Student;
 import iVoteSimulation.VotingService;
 
-public class SimulationDrive {
+public class SimulationDriver {
 	private static MultiChoiceQuestion q1;
 	private static SingleChoiceQuestion q2;
 	private static VotingService question1, question2;
