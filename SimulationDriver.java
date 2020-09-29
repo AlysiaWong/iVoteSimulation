@@ -17,8 +17,7 @@ public class SimulationDrive {
 	private static SingleChoiceQuestion q2;
 	private static VotingService question1, question2;
 	private static String currentQuestion;
-	private static MultiResponse multiResponses;
-	private static SingleResponse singleResponses;
+	private static Response multiResponses, singleResponses;
 	private static ArrayList<String> currentAnswerChoices = new ArrayList<String>();
 	private static ArrayList<String> studentAnswers = new ArrayList<String>();
 	final static int TOTAL_STUDENTS = (int)(Math.random() * 50) + 1;
@@ -52,7 +51,7 @@ public class SimulationDrive {
 		
 		q1 = new MultiChoiceQuestion(currentQuestion, currentAnswerChoices);
 		System.out.println("Question: " + q1.getQuestion());
-		multiResponses = new MultiResponse("The Godfather", "Rocky", "West Side Story", "Titanic");
+		multiResponses = new Response("The Godfather", "Rocky", "West Side Story", "Titanic");
 		multiResponses.printResponseChoices();
 		
 		// students picking their answers
@@ -98,7 +97,7 @@ public class SimulationDrive {
 		currentQuestion = "What is the capital of Canada?";
 		q2 = new SingleChoiceQuestion(currentQuestion, currentAnswerChoices);
 		System.out.println("Question: " + q2.getQuestion());
-		singleResponses = new SingleResponse("Ottawa", "Toronto", "Montreal", "Ontario");
+		singleResponses = new Response("Ottawa", "Toronto", "Montreal", "Ontario");
 		singleResponses.printResponseChoices();
 		studentAnswers.clear(); // new question
 		
