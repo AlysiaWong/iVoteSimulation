@@ -43,7 +43,7 @@ public class SimulationDriver {
 		*/
 			
 		// set and print question and answers
-		currentQuestion = new String ("Which 2 of the following movies were made in the 1970's?");
+		currentQuestion = new String ("Which of the following movies have you seen before?");
 		currentAnswerChoices.add("A");
 		currentAnswerChoices.add("B");
 		currentAnswerChoices.add("C");
