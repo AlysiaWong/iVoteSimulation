@@ -51,7 +51,7 @@ public class SimulationDriver {
 		
 		q1 = new MultiChoiceQuestion(currentQuestion, currentAnswerChoices);
 		System.out.println("Question: " + q1.getQuestion());
-		multiResponses = new Response("The Godfather", "Rocky", "West Side Story", "Titanic");
+		multiResponses = new Response("The Godfather", "Frozen", "Star Wars", "Titanic");
 		multiResponses.printResponseChoices();
 		
 		// students picking their answers
